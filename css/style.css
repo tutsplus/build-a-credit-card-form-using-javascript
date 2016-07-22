@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #343b50;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #3B3B3B;
+    font-size: 3.625em;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    color: #7F7F7F;
+    font-size: 1.125em;
+    font-weight: 300;
+    margin: 0;
+}
+
+    h2 span.active {
+        color: #3993cd;
+        transition: all .3s ease-in-out;
+    }
+
+.card-container {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 42.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.30);
+}
+
+    .card-container header,
+    .card-container main,
+    .card-container footer {
+        padding: 3.75em;
+    }
+
+    .card-container header {
+        border-bottom: 1px solid #ECECEC;
+        padding-bottom: 2em;
+    }
+
+    .card-container main {
+        padding-bottom: 0;
+    }
+
+    .card-container footer {
+        padding-top: 0;
+        color: #7F7F7F;
+        font-size: .75em;
+        text-align: center;
+    }
+
+form {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+    form label {
+        color: #BABABA;
+        font-size: .75em;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: .5em;
+    }
+
+.input-fields-container {
+    margin-bottom: 3.75em;
+}
+
+    .input-fields-container:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+.cc-input {
+    max-width: 100%;
+    color: #3B3B3B;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid #ECECEC;
+    padding-bottom: .5em;
+    transition: all .3s ease-in-out;
+}
+
+    .cc-input:focus {
+        border-bottom-color: #3B3B3B;
+    }
+
+    .cc-input.error {
+        border-bottom-color: #BD4B3A;
+        color: #BD4B3A;
+    }
+
+#cc-number-container,
+#cc-expiration-date-container,
+#cc-cvv-container {
+    float: left;
+    margin-right: 2em;
+}
+
+#cc-number {
+    width: 17em;
+    padding-left: 3em;
+    background-color: #fff;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+}
+
+#cc-expiration-date {
+    width: 8em;
+}
+
+#cc-cvv {
+    width: 6em;
+}
+
+#cc-expiration-date-container,
+#cc-cvv-container {
+    display: none;
+}
+
+#cc-cvv-container {
+    margin-right: 0;
+}
+
+.cc-generic #cc-number {
+    background-image: url( ../img/cc-generic.svg );
+}
+
+.cc-visa #cc-number {
+    background-image: url( ../img/cc-visa.svg );
+}
+
+.cc-mastercard #cc-number {
+    background-image: url( ../img/cc-mastercard.svg );
+}
+
+.cc-amex #cc-number {
+    background-image: url( ../img/cc-amex.svg );
+}
+
+#submit-payment {
+    background-color: #3993cd;
+    border: 1px solid #286790;
+    border-radius: 50px;
+    height: 3.5em;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 3.5em;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+
+    #submit-payment:not(.disabled):hover {
+        background-color: #286790;
+    }
+
+.disabled {
+    cursor: default;
+    opacity: .5;
+}

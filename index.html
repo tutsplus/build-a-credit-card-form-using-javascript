@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Build a Credit Card Form using JavaScript</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700|Roboto+Mono:500">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="card-container">
+            <header>
+                <h1>Pay with credit card</h1>
+                <h2>Please enter the credit card <span id="title-cc-number" class="active">number</span>, <span id="title-cc-expiration-date">expiration date</span> and <span id="title-cc-cvv">security code</span>.</h2>
+            </header>
+
+            <main>
+                <form action="" id="card-form" method="POST">
+                    <div class="input-fields-container">
+                        <div id="cc-number-container" class="cc-generic">
+                            <label for="cc-number">Card number *</label>
+                			<input type="text" id="cc-number" class="cc-input" />
+                        </div> <!-- end cc-number-container -->
+                        <div id="cc-expiration-date-container">
+                            <label for="cc-expiration-date">Expiration date</label>
+                			<input type="text" id="cc-expiration-date" class="cc-input" />
+                        </div>
+                        <div id="cc-cvv-container">
+                            <label for="cc-cvv">CVV</label>
+                			<input type="text" id="cc-cvv" class="cc-input" />
+                        </div>
+                    </div> <!-- end input-fields-container -->
+
+                    <a href="#" id="submit-payment" class="disabled">Make Payment</a>
+                </form>
+            </main>
+
+            <footer>
+                <p><em>* We only accept Visa, MasterCard and American Express.</em></p>
+            </footer>
+        </div> <!-- end card-container -->
+
+        <script src="js/jquery-latest.js"></script>
+        <script src="js/jquery.inputmask.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+</html>
