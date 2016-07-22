@@ -3,6 +3,9 @@
 
 In this short course you'll learn how to build and validate a credit card form using JavaScript. You'll be using Luhn's algorithm for validation and you'll also explore a different method of filing in forms.
 
+#### Source Files Description:
+
+The source files contain the finished form. Use them to double check your code or work alongside the instructor.
 
 **Available on Tuts+ July 2016**
 
